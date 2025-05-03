@@ -10,5 +10,9 @@ public class JpaUserDetailService implements UserDetailsService {
     private final UserRepository userRepository;
 
     @Override
-    public UserDetai
+    public JpaUserDetailService(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+
+    public
 }
